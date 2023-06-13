@@ -1,32 +1,36 @@
 import React from "react";
+import { Layout } from "./Layout";
 
 export const Skills = () => {
   return (
-    <section id="skills" class="container py-4">
-      <div class="row">
-        <div class="col">
-          {/* <!-- title --> */}
-          <div class="title">
-            <span>Skills</span>
-          </div>
+    <Layout>
+      <section id="skills" className="container py-4">
+        <div className="row">
+          <div className="col">
+            {/* <!-- title --> */}
+            <div className="title">
+              <span>Skills</span>
+            </div>
 
-          {/* <!-- icons --> */}
-          <div class="icons">
-            <div>
-              <i class="fa-brands fa-html5 text-danger"></i> HTML
-            </div>
-            <div>
-              <i class="fa-brands fa-css3-alt text-primary"></i> CSS
-            </div>
-            <div>
-              <i class="fa-brands fa-square-js text-warning"></i> JavaScript
-            </div>
-            <div>
-              <i class="fa-brands fa-figma"></i>Figma
+            {/* <!-- icons --> */}
+            <div className="icons">
+              <div>
+                <i className="fa-brands fa-html5 text-danger"></i> HTML
+              </div>
+              <div>
+                <i className="fa-brands fa-css3-alt text-primary"></i> CSS
+              </div>
+              <div>
+                <i className="fa-brands fa-square-js text-warning"></i>{" "}
+                JavaScript
+              </div>
+              <div>
+                <i className="fa-brands fa-figma"></i>Figma
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Layout>
   );
 };

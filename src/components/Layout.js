@@ -1,16 +1,15 @@
 import React from "react";
+import { TopNav } from "./TopNav";
+import { Container } from "react-bootstrap";
+import { Footer } from "./Footer";
 
 export const Layout = ({ children }) => {
   return (
     <>
-      {children}
-      <footer class="bg-dark text-light p-5 text-center mt-5">
-        Copyright &copy; All right Reserved. Made with 💓 by me 🤷‍♀️
-      </footer>
+      <TopNav />
+      <div className="main-layout">{children}</div>
 
-      <a href="#navbar" id="goup">
-        <i class="fa-solid fa-circle-up"></i>
-      </a>
+      <Footer />
     </>
   );
 };
