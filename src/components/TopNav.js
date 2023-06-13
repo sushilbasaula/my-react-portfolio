@@ -4,21 +4,30 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+import { Link } from "react-router-dom";
 export const TopNav = () => {
   return (
     <Navbar expand="md" className="topNav" id="navbar" collapseOnSelect>
       <Container>
-        <Navbar.Brand href="#">
+        <Link to="/">
           <img src={logo} alt="logo" width="60px" />
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#about">About me</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Link className="nav-link" to="/skills">
+              Skills
+            </Link>
+            <Link className="nav-link" to="/projects">
+              Projects
+            </Link>
+            <Link className="nav-link" to="/about-me">
+              About Me
+            </Link>
+            <Link className="nav-link" to="/contact">
+              {" "}
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
